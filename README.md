@@ -24,6 +24,13 @@ Cevitxe provides three services:
 
 ## Getting started
 
+Install libraries and build the packages:
+
+```
+yarn
+yarn build
+```
+
 ### Run the examples
 
 Two demo React applications are included:

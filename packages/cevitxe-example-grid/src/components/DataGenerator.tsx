@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core'
-import { menu, styles } from 'cevitxe-toolbar'
+import { menu, styles } from '@philschatz/cevitxe-toolbar'
 import { JSONSchema7 } from 'json-schema'
 import { Fragment, useState } from 'react'
 import { useDispatch } from 'react-redux'

@@ -1,5 +1,5 @@
 ﻿import * as R from 'ramda'
-import { Clock } from 'cevitxe-types'
+import { Clock } from '@philschatz/cevitxe-types'
 import A from 'automerge'
 import { Map } from 'immutable'
 

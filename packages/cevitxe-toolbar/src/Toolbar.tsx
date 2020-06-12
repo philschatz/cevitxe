@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { CSSObject, jsx } from '@emotion/core'
-import { StoreManager } from 'cevitxe'
+import { StoreManager } from '@philschatz/cevitxe'
 import debug from 'debug'
 import { Field, Formik } from 'formik'
 import { codes } from 'keycode'

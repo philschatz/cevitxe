@@ -1,4 +1,4 @@
-import { Server } from 'cevitxe-signal-server'
+import { Server } from '@philschatz/cevitxe-signal-server'
 import debug from 'debug'
 import { getPortPromise as getAvailablePort } from 'portfinder'
 import { Client } from './Client'

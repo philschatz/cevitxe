@@ -1,6 +1,6 @@
 import { getReducer } from './getReducer'
 import { repoFromSnapshot } from './repoTestHelpers'
-import { ProxyReducer, ChangeManifest } from 'cevitxe-types/src'
+import { ProxyReducer, ChangeManifest } from '@philschatz/cevitxe-types/src'
 
 describe('getReducer', () => {
   describe('single change function', () => {

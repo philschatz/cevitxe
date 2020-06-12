@@ -1,7 +1,7 @@
 ﻿import A from 'automerge'
-import { newid } from 'cevitxe-signal-client'
-import { StorageAdapter } from 'cevitxe-storage-abstract'
-import { IdbAdapter } from 'cevitxe-storage-indexeddb'
+import { newid } from '@philschatz/cevitxe-signal-client'
+import { StorageAdapter } from '@philschatz/cevitxe-storage-abstract'
+import { IdbAdapter } from '@philschatz/cevitxe-storage-indexeddb'
 import {
   ChangeManifest,
   ChangeSet,
@@ -12,7 +12,7 @@ import {
   isFunction,
   RepoHistory,
   RepoSnapshot,
-} from 'cevitxe-types'
+} from '@philschatz/cevitxe-types'
 import debug from 'debug'
 import { clone } from 'ramda'
 import { EMPTY_CLOCK, getClock, mergeClocks } from './clocks'

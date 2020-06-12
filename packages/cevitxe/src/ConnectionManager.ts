@@ -1,5 +1,5 @@
 ﻿import { EventEmitter } from 'events'
-import { Client as SignalClient, newid, Peer } from 'cevitxe-signal-client'
+import { Client as SignalClient, newid, Peer } from '@philschatz/cevitxe-signal-client'
 import debug from 'debug'
 import * as Redux from 'redux'
 import { Connection } from './Connection'

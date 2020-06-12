@@ -1,4 +1,4 @@
-import { StoreManager } from 'cevitxe'
+import { StoreManager } from '@philschatz/cevitxe'
 import { VisibilityFilter, State } from '../types'
 import { logger } from './logger'
 import { proxyReducer } from './reducers'

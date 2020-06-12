@@ -1,5 +1,5 @@
 ﻿import { MongoAdapter } from '.'
-import { newid } from 'cevitxe-signal-client'
+import { newid } from '@philschatz/cevitxe-signal-client'
 
 const pause = (t = 100) => new Promise(yes => setTimeout(() => yes(), t))
 

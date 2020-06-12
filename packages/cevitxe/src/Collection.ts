@@ -1,4 +1,4 @@
-import { RepoSnapshot, Snapshot } from 'cevitxe-types'
+import { RepoSnapshot, Snapshot } from '@philschatz/cevitxe-types'
 import { DELETED, GLOBAL } from './constants'
 
 /**

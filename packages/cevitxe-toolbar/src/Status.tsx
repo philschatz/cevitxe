@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { StoreManager } from 'cevitxe'
+import { StoreManager } from '@philschatz/cevitxe'
 
 interface StatusProps<T> {
   storeManager: StoreManager<T>;

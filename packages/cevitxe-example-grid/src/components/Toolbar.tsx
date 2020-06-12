@@ -1,6 +1,6 @@
 ﻿/** @jsx jsx */
 import { jsx } from '@emotion/core'
-import { styles } from 'cevitxe-toolbar'
+import { styles } from '@philschatz/cevitxe-toolbar'
 import { useSelector } from 'react-redux'
 import { DataGenerator } from './DataGenerator'
 

@@ -1,4 +1,4 @@
-import { newid } from 'cevitxe-signal-client'
+import { newid } from '@philschatz/cevitxe-signal-client'
 import { Repo } from './Repo'
 
 export const repoFromSnapshot = async (

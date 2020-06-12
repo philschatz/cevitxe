@@ -2,7 +2,7 @@ import debug, { Debugger } from 'debug'
 import { EventEmitter } from 'events'
 
 import { Peer } from './Peer'
-import { Message } from 'cevitxe-signal-server'
+import { Message } from '@philschatz/cevitxe-signal-server'
 import { ClientOptions } from './types'
 import { newid } from './newid'
 

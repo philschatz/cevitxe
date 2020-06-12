@@ -1,6 +1,6 @@
 // ignore file coverage
 
-import { Keychain } from 'cevitxe-types'
+import { Keychain } from '@philschatz/cevitxe-types'
 
 const keychainId = (databaseName: string) => `cevitxe/${databaseName}/keychain`
 

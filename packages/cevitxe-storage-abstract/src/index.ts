@@ -1,4 +1,4 @@
-﻿import { ChangeSet, SnapshotRecord } from 'cevitxe-types'
+﻿import { ChangeSet, SnapshotRecord } from '@philschatz/cevitxe-types'
 
 export abstract class StorageAdapter {
   storageKey: string

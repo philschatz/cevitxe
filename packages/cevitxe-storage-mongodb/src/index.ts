@@ -1,5 +1,5 @@
-﻿import { StorageAdapter } from 'cevitxe-storage-abstract'
-import { ChangeSet, SnapshotRecord } from 'cevitxe-types'
+﻿import { StorageAdapter } from '@philschatz/cevitxe-storage-abstract'
+import { ChangeSet, SnapshotRecord } from '@philschatz/cevitxe-types'
 import { MongoClient, Db, Collection } from 'mongodb'
 
 export class MongoAdapter extends StorageAdapter {

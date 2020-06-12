@@ -5,7 +5,7 @@ import { Synchronizer } from './Synchronizer'
 import { Message } from './Message'
 import { pause as _yield } from './pause'
 import debug from 'debug'
-import { newid } from 'cevitxe-signal-client'
+import { newid } from '@philschatz/cevitxe-signal-client'
 
 const log = debug('cevitxe:test')
 

@@ -1,4 +1,4 @@
-import { ProxyReducer } from 'cevitxe-types'
+import { ProxyReducer } from '@philschatz/cevitxe-types'
 import debug from 'debug'
 import { Middleware } from 'redux'
 import { RECEIVE_MESSAGE_FROM_PEER } from './constants'

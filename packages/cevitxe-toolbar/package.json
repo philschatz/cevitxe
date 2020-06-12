@@ -1,7 +1,7 @@
 {
   "name": "@philschatz/cevitxe-toolbar",
   "description": "Toolbar component for managing document IDs in Cevitxe examples.",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "license": "MIT",
   "private": false,
   "main": "dist/src/Toolbar.js",
@@ -15,8 +15,8 @@
   },
   "dependencies": {
     "@emotion/core": "10",
-    "@philschatz/cevitxe": "^0.4.2",
-    "@philschatz/cevitxe-types": "^0.4.2",
+    "@philschatz/cevitxe": "^0.4.3",
+    "@philschatz/cevitxe-types": "^0.4.3",
     "formik": "^2.0.1-rc.13",
     "friendly-words": "1",
     "react": "16",

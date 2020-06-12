@@ -43,5 +43,9 @@
       "/node_modules/",
       "/dist"
     ]
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "ea6d0268359e0fe57eabd2f4ade1c98c8c2cb02d"
 }

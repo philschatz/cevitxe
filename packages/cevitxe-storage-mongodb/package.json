@@ -30,5 +30,9 @@
     "ts-jest": "25",
     "tslib": "1",
     "typescript": "3"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "ea6d0268359e0fe57eabd2f4ade1c98c8c2cb02d"
 }

@@ -59,5 +59,8 @@
       "/dist"
     ]
   },
-  "gitHead": "061c22c8e2481fac0ae5bbb70880b11e80c6f31e"
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "ea6d0268359e0fe57eabd2f4ade1c98c8c2cb02d"
 }

@@ -14,5 +14,8 @@
   "devDependencies": {
     "@philschatz/cevitxe-types": "file:../cevitxe-types",
     "typescript": "3"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

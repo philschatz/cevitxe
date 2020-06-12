@@ -1,7 +1,7 @@
 {
   "name": "@philschatz/cevitxe-storage-indexeddb",
   "description": "IndexedDB storage adapter for Cevitxe",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "license": "MIT",
   "private": false,
   "main": "dist/src/index.js",
@@ -13,7 +13,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@philschatz/cevitxe-signal-client": "^0.4.3",
+    "@philschatz/cevitxe-signal-client": "^0.4.5",
     "@philschatz/cevitxe-storage-abstract": "^0.4.4",
     "automerge": "0",
     "debug": "4",

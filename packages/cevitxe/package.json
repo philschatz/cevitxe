@@ -1,7 +1,7 @@
 {
   "name": "@philschatz/cevitxe",
   "description": "CRDT-based distributed state management for Redux",
-  "version": "0.4.3",
+  "version": "0.4.4",
   "license": "MIT",
   "private": false,
   "main": "dist/src/index.js",
@@ -17,9 +17,9 @@
   },
   "dependencies": {
     "@philschatz/cevitxe-signal-client": "^0.4.3",
-    "@philschatz/cevitxe-storage-abstract": "^0.4.3",
-    "@philschatz/cevitxe-storage-indexeddb": "^0.4.3",
-    "@philschatz/cevitxe-types": "^0.4.3",
+    "@philschatz/cevitxe-storage-abstract": "^0.4.4",
+    "@philschatz/cevitxe-storage-indexeddb": "^0.4.4",
+    "@philschatz/cevitxe-types": "^0.4.4",
     "@stablelib/base64": "1",
     "@stablelib/utf8": "1",
     "automerge": "0",

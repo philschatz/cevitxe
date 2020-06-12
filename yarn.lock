@@ -2398,6 +2398,9 @@
   dependencies:
     "@types/node" ">= 8"
 
+"@philschatz/cevitxe-types@file:packages/cevitxe-types":
+  version "0.4.2"
+
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/@samverschueren/stream-to-observable/-/stream-to-observable-0.3.0.tgz#ecdf48d532c58ea477acfcab80348424f8d0662f"

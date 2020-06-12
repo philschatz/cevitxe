@@ -12,7 +12,7 @@
     "watch": "tsc --watch"
   },
   "devDependencies": {
-    "@philschatz/cevitxe-types": "^0.4.2",
+    "@philschatz/cevitxe-types": "file:../cevitxe-types",
     "typescript": "3"
   }
 }

@@ -205,7 +205,7 @@ export class Server extends EventEmitter {
       })
 
       this.httpServer = app.listen(this.port, () => {
-        const msg = `🐟 Listening at http://{hostname}:${this.port}  `
+        const msg = `🐟 Listening at http://{any_hostname}:${this.port}  `
         if (!silent) console.log(msg)
         this.log(msg)
         this.emit('ready')

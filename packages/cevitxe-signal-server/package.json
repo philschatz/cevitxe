@@ -1,6 +1,6 @@
 {
   "name": "@philschatz/cevitxe-signal-server",
-  "version": "0.5.1",
+  "version": "0.5.4",
   "license": "MIT",
   "main": "src/index.ts",
   "scripts": {
@@ -18,7 +18,7 @@
     "ws": "7"
   },
   "devDependencies": {
-    "@philschatz/cevitxe-types": "^0.5.0",
+    "@philschatz/cevitxe-types": "^0.5.4",
     "@types/express": "4",
     "@types/express-ws": "3",
     "@types/jest": "25",

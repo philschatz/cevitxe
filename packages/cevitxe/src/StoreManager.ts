@@ -1,9 +1,9 @@
-import { EventEmitter } from 'events'
 import A from 'automerge'
 import { newid } from '@philschatz/cevitxe-signal-client'
-import { ProxyReducer, RepoSnapshot, Snapshot } from '@philschatz/cevitxe-types'
+import { ConnectionEvent, ProxyReducer, RepoSnapshot, Snapshot } from '@philschatz/cevitxe-types'
 import cuid from 'cuid'
 import debug from 'debug'
+import { EventEmitter } from 'events'
 import { applyMiddleware, createStore, Middleware, Store } from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import { ConnectionManager, CONNECTION } from './ConnectionManager'
@@ -15,6 +15,7 @@ import { Repo } from './Repo'
 
 let log = debug('cevitxe:StoreManager')
 
+const { OPEN, CLOSE, PEER: PEER_ADD, PEER_REMOVE } = ConnectionEvent
 /**
  * A StoreManager generates a Redux store with persistence (via the Repo class), networking (via
  * cevitxe-signal-client), and magical synchronization with peers (via automerge)
@@ -140,3 +141,13 @@ export interface StoreManagerOptions<T> {
 
 // Use shorter IDs
 A.uuid.setFactory(cuid)
+
+const pipeEvents = ({
+  source,
+  target,
+  events,
+}: {
+  source: EventEmitter
+  target: EventEmitter
+  events: ConnectionEvent[]
+}) => events.forEach(event => source.on(event, payload => target.emit(event, payload)))

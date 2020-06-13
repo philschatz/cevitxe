@@ -1,56 +1,65 @@
-import React, { Component } from 'react'
-import { StoreManager } from '@philschatz/cevitxe'
+/** @jsx jsx */
+import { jsx } from '@emotion/core'
+import { StoreManager } from 'cevitxe'
+import { ConnectionEvent } from 'cevitxe-types'
+import { useEffect, useState } from 'react'
+import { StatusLight } from './StatusLight'
+import { styles } from './Toolbar'
 
-interface StatusProps<T> {
-  storeManager: StoreManager<T>;
+const { OPEN, CLOSE, PEER, PEER_REMOVE } = ConnectionEvent
+
+interface StatusProps {
+  storeManager: StoreManager<any>
 }
 
-interface StatusState {
-  peers?: String[]
-}
+export const Status = ({ storeManager }: StatusProps) => {
+  const [online, setOnline] = useState<boolean>(false)
+  const [peers, setPeers] = useState<string[]>([])
 
-export class Status extends Component<StatusProps<any>, StatusState> {
-
-  constructor(props: StatusProps<any>) {
-    super(props)
-    this.state = { peers: undefined }
-    this.peerHandler = this.peerHandler.bind(this)
-    this.openHandler = this.openHandler.bind(this)
-    this.closeHandler = this.closeHandler.bind(this)
+  const onPeer = (updatedPeers: string[]) => {
+    setPeers(updatedPeers)
   }
 
-  peerHandler(peers: String[]) {
-    this.setState({peers})
-  }
-  openHandler() {
-    this.setState({peers: []})
-  }
-  closeHandler() {
-    this.setState({peers: undefined})
-  }
-  componentDidMount() {
-    const m = this.props.storeManager
-    m.on('open', this.openHandler)
-    m.on('close', this.closeHandler)
-    m.on('peer_add', this.peerHandler)
-    m.on('peer_remove', this.peerHandler)
-  }
-  componentWillUnmount() {
-    const m = this.props.storeManager
-    m.off('open', this.openHandler)
-    m.off('close', this.closeHandler)
-    m.off('peer_add', this.peerHandler)
-    m.off('peer_remove', this.peerHandler)
+  const onOpen = () => {
+    setOnline(true)
+    setPeers([])
   }
 
-  render() {
-    const { peers } = this.state
-    if (!peers) {
-        return <p>Not connected to internet ring.</p>
-    } else if (peers.length > 0) {
-        return <p>Connected to {peers.length} other user(s)</p>
-    } else {
-        return <p>Connected but there are no other users</p>
-    }
+  const onClose = () => {
+    setOnline(false)
+    setPeers([])
   }
+
+  const addListeners = () => {
+    storeManager.on(OPEN, onOpen)
+    storeManager.on(CLOSE, onClose)
+    storeManager.on(PEER, onPeer)
+    storeManager.on(PEER_REMOVE, onPeer)
+    return removeListeners // return cleanup function
+  }
+
+  const removeListeners = () => {
+    storeManager.off(OPEN, onOpen)
+    storeManager.off(CLOSE, onClose)
+    storeManager.off(PEER, onPeer)
+    storeManager.off(PEER_REMOVE, onPeer)
+  }
+
+  useEffect(addListeners, [storeManager]) // fires when storeManager changes
+
+  const peerCountMessage =
+    peers.length === 0
+      ? 'no peers are connected'
+      : peers.length === 1
+      ? `one peer is connected`
+      : `${peers.length} other peers are connected`
+  const statusMessage = online ? `online; ${peerCountMessage}` : 'offline'
+  return (
+    <div css={styles.toolbarGroup} title={statusMessage}>
+      <label>
+        <StatusLight online={online} />
+        {online ? <span css={{ marginLeft: '.5em' }}>{peers.length}</span> : ''}
+      </label>
+    </div>
+  )
 }

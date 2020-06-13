@@ -1,7 +1,7 @@
 {
   "name": "cevitxe-example-todo",
   "description": "TodoMVC implemented with React-Redux & Cevitxe.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "license": "MIT",
   "private": true,
   "main": "src/index.tsx",
@@ -13,8 +13,8 @@
   },
   "dependencies": {
     "@emotion/core": "10",
-    "@philschatz/cevitxe": "^0.5.0",
-    "@philschatz/cevitxe-toolbar": "^0.5.0",
+    "@philschatz/cevitxe": "^0.5.1",
+    "@philschatz/cevitxe-toolbar": "^0.5.1",
     "classnames": "2",
     "debug": "4",
     "npm-run-all": "4",

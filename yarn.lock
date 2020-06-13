@@ -2399,7 +2399,7 @@
     "@types/node" ">= 8"
 
 "@philschatz/cevitxe-types@file:packages/cevitxe-types":
-  version "0.4.2"
+  version "0.5.0"
 
 "@samverschueren/stream-to-observable@^0.3.0":
   version "0.3.0"
@@ -4630,6 +4630,11 @@ caseless@~0.12.0:
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
+
+cevitxe-types@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/cevitxe-types/-/cevitxe-types-0.4.2.tgz#b2e1df4c1eb68d1a5488296f2e9ed906544cfd76"
+  integrity sha512-U/HIaGlI5bX2CGD9JMoSFWRbFlrlIeCOWbA80UoQGJ6MU1D3Z39ZSQk+AfN+MMtQgp4+F5NntFDmOx1JSTWs1Q==
 
 chalk@2.4.2, chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.3.1, chalk@^2.4.1, chalk@^2.4.2:
   version "2.4.2"

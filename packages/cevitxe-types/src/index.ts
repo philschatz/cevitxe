@@ -129,6 +129,7 @@ export interface SnapshotRecord {
 
 // connection events
 
+
 export enum ConnectionEvent {
   OPEN = 'open',
   READY = 'ready',

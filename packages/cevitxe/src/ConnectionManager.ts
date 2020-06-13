@@ -1,10 +1,10 @@
 ﻿import { EventEmitter } from 'events'
-import { Client, newid, Peer } from 'cevitxe-signal-client'
+import { Client, newid, Peer } from '@philschatz/cevitxe-signal-client'
 import debug from 'debug'
 import * as Redux from 'redux'
 import { Connection } from './Connection'
 import { Repo } from './Repo'
-import { ConnectionEvent } from 'cevitxe-types'
+import { ConnectionEvent } from '@philschatz/cevitxe-types'
 
 const log = debug('cevitxe:connectionmanager')
 const { OPEN, CLOSE, PEER, PEER_REMOVE } = ConnectionEvent

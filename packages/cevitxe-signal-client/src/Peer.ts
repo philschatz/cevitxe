@@ -2,7 +2,7 @@ import Debug from 'debug'
 import { PeerOptions } from './types'
 import { EventEmitter } from 'events'
 
-import { ConnectionEvent } from 'cevitxe-types'
+import { ConnectionEvent } from '@philschatz/cevitxe-types'
 
 const log = Debug('cevitxe:signal-client:peer')
 const { OPEN, CLOSE } = ConnectionEvent

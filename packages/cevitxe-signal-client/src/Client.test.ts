@@ -3,7 +3,7 @@ import debug from 'debug'
 import { getPortPromise as getAvailablePort } from 'portfinder'
 import { Client } from './Client'
 import { Peer } from './Peer'
-import { ConnectionEvent } from 'cevitxe-types'
+import { ConnectionEvent } from '@philschatz/cevitxe-types'
 
 const { PEER } = ConnectionEvent
 

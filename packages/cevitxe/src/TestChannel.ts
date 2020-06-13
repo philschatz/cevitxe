@@ -1,7 +1,7 @@
 ﻿import { EventEmitter } from 'events'
 import { Message } from './Message'
 import debug from 'debug'
-import { ConnectionEvent } from 'cevitxe-types'
+import { ConnectionEvent } from '@philschatz/cevitxe-types'
 
 const { DATA } = ConnectionEvent
 

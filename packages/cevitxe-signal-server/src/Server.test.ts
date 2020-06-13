@@ -2,7 +2,7 @@ import debug from 'debug'
 import WebSocket from 'ws'
 import { Server } from './Server'
 import { getPortPromise as getAvailablePort } from 'portfinder'
-import { ConnectionEvent } from 'cevitxe-types'
+import { ConnectionEvent } from '@philschatz/cevitxe-types'
 
 const log = debug('cevitxe:signal-server:tests')
 const { MESSAGE, OPEN } = ConnectionEvent

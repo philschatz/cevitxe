@@ -8,7 +8,7 @@ import { deduplicate } from './lib/deduplicate'
 import { intersection } from './lib/intersection'
 import { pipeSockets } from './lib/pipeSockets'
 import { ConnectRequestParams, KeySet, Message } from './types'
-import { ConnectionEvent } from 'cevitxe-types'
+import { ConnectionEvent } from '@philschatz/cevitxe-types'
 
 const { READY, CONNECTION, CLOSE, MESSAGE } = ConnectionEvent
 

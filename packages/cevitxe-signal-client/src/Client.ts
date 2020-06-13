@@ -5,7 +5,7 @@ import { Peer } from './Peer'
 import { Message } from '@philschatz/cevitxe-signal-server'
 import { ClientOptions } from './types'
 import { newid } from './newid'
-import { ConnectionEvent } from 'cevitxe-types'
+import { ConnectionEvent } from '@philschatz/cevitxe-types'
 
 const { OPEN, CLOSE, PEER } = ConnectionEvent
 

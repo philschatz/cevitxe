@@ -1,5 +1,5 @@
 import WebSocket from 'ws'
-import { ConnectionEvent } from 'cevitxe-types'
+import { ConnectionEvent } from '@philschatz/cevitxe-types'
 
 const { OPEN, CLOSE, ERROR, MESSAGE } = ConnectionEvent
 

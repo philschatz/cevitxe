@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core'
-import { StoreManager } from 'cevitxe'
-import { ConnectionEvent } from 'cevitxe-types'
+import { StoreManager } from '@philschatz/cevitxe'
+import { ConnectionEvent } from '@philschatz/cevitxe-types'
 import { useEffect, useState } from 'react'
 import { StatusLight } from './StatusLight'
 import { styles } from './Toolbar'

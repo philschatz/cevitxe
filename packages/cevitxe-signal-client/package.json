@@ -1,6 +1,6 @@
 {
   "name": "cevitxe-signal-client",
-  "version": "0.4.2",
+  "version": "0.6.0",
   "license": "MIT",
   "description": "",
   "main": "dist/src/index.js",
@@ -13,7 +13,7 @@
   },
   "author": "",
   "dependencies": {
-    "cevitxe-types": "^0.4.2",
+    "cevitxe-types": "^0.6.0",
     "debug": "4",
     "ts-node": "8",
     "ws": "7"
@@ -22,7 +22,7 @@
     "@types/jest": "25",
     "@types/node": "13",
     "@types/ws": "6",
-    "cevitxe-signal-server": "^0.4.2",
+    "cevitxe-signal-server": "^0.6.0",
     "jest": "25",
     "portfinder": "1",
     "rimraf": "3",
